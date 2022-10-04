@@ -35,15 +35,15 @@
           'Apellido'=> "Torres",
           'Direccion'=>"Av. Mayor 3703",
           'Telefono'=>1122334455,
-          ]
+        ]
       ?>
 
     <h2>Ejercicio 4</h2>
     <h3>Crear un array introduciendo las ciudades: Madrid, Barcelona, Londres, New York, Los Ángeles y Chicago, sin asignar índices al array. A continuación, muestra el contenido del array.  Ejemplo: La ciudad con el índice 0 tiene el nombre Madrid. </h3>
     <?php
-    $ciudades = ["Madrid", "Barcelona", "Londres", "New York", "Los Angeles", "Chicago"]
-    foreach ($ciudades as $indice=> $value) {
-      print"La ciudad con el índice {$ciudades[$indice]} tiene el nombre {$ciudades[$value]}."
+    $ciudades = ["Madrid", "Barcelona", "Londres", "New York", "Los Angeles", "Chicago"];
+    foreach ($ciudades as $indice=> $nombre) {
+      print "La ciudad con el índice $indice tiene el nombre $nombre.\n";
     }
      ?>
 
