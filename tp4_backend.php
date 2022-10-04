@@ -28,14 +28,15 @@
      ?>
 
     <h2>Ejercicio 3</h2>
-    <h3>Crear un array asociativo e introducir los valores dados</h3>
+    <h3>Crear un array asociativo e introducir los valores dados (No decia mostrar pero muestro el array)</h3>
     <?php
         $array=[
           'Nombre'=>"Pedro",
           'Apellido'=> "Torres",
           'Direccion'=>"Av. Mayor 3703",
           'Telefono'=>1122334455,
-        ]
+        ];
+        print_r($array)
       ?>
 
     <h2>Ejercicio 4</h2>
@@ -43,14 +44,24 @@
     <?php
     $ciudades = ["Madrid", "Barcelona", "Londres", "New York", "Los Angeles", "Chicago"];
     foreach ($ciudades as $indice=> $nombre) {
-      print "La ciudad con el índice $indice tiene el nombre $nombre.\n";
+      print "<p>La ciudad con el índice $indice tiene el nombre $nombre.</p>\n";
     }
      ?>
 
     <h2>Ejercicio 5</h2>
-    <h3>Mostrar las suma de los numeros del 1 al 20</h3>
-
-
-
+    <h3>Repite el ejercicio anterior pero ahora se ha de crear índices, MD para Madrid, BCL para Barcelona, LD para Londres, NY para New York, LA para Los Ángeles y CCG para Chicago.  Ejemplo: El índice de Madrid es MD.</h3>
+    <?php
+        $ciudades=[
+          'MD'=>"Madrid",
+          'BCL'=> "Barcelona",
+          'LD'=>"Londres",
+          'NY'=>"New York",
+          'LA'=> "Los Angeles",
+          'CCG'=>"Chicago",
+        ];
+        foreach ($ciudades as $indice=> $nombre) {
+          print "<p>El indice de $nombre es $indice.</p>\n";
+        }
+      ?>
   </body>
 </html>
